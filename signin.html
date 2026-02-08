@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/logo-1.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\queries.css" />
+    <link rel="stylesheet" href="css\sign-in.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Sign-In</title>
+  </head>
+  <body></body>
+</html>
+
+<body>
+  <header class="section-header">
+    <div class="header-part">
+      <a href="#">
+        <img class="logo-img" alt="cineScope logo" src="images\logo.png" />
+        <img class="logo-img-1" alt="cineScope logo" src="images\logo-1.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="search-bar">
+          <input
+            type="search"
+            id="movie search"
+            name="q"
+            class="search-box"
+            placeholder="Search"
+          />
+          <button class="search-butt">Search</button>
+        </div>
+        <ul class="main-nav">
+          <li><a class="home-nav main-nav-link" href="index.html">Home</a></li>
+          <li class="categories">
+            <a class="categories-nav main-nav-link" href="#"
+              >Categories <ion-icon name="chevron-down-outline"></ion-icon
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Superhero</a></li>
+              <li><a href="#">Comedy</a></li>
+              <li><a href="#">Horror</a></li>
+              <li><a href="#">Scify</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="signin-nav main-nav-link" href="signin.html">Sign in</a>
+          </li>
+        </ul>
+      </div>
+      <button class="mobile-navigation">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="categories"
+              >Categories <ion-icon name="chevron-down-outline"></ion-icon
+            ></a>
+          </li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="sign-in-container">
+      <div class="old-user">
+        <h3 class="heading-tertiary">Sign in</h3>
+        <div class="sign-in-options">
+          <div class="sign-in">
+            <p class="sign-in-txt">
+              <a href="#" class="sign-cinescope sign-in-company"
+                >Sign in with cineScope<img
+                  class="sign-logo"
+                  alt="cineScope logo"
+                  src="images/logo-1.png"
+              /></a>
+            </p>
+          </div>
+          <div class="sign-in">
+            <p class="sign-in-txt">
+              <a href="#" class="sign-google sign-in-company"
+                >Sign in with Google<ion-icon name="logo-google"></ion-icon
+              ></a>
+            </p>
+          </div>
+          <div class="sign-in">
+            <p class="sign-in-txt">
+              <a href="#" class="sign-apple sign-in-company"
+                >Sign in with Apple<ion-icon name="logo-apple"></ion-icon
+              ></a>
+            </p>
+          </div>
+          <div class="sign-in">
+            <p class="sign-in-txt">
+              <a href="#" class="sign-microsoft sign-in-company"
+                >Sign in with Microsoft<ion-icon
+                  name="logo-microsoft"
+                ></ion-icon
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="sign-in-conditions">
+          <p class="conditions-txt">
+            By signing in, you agree to cineScope's
+            <a href="#">Conditions of use</a> and
+            <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="new-user">
+        <h3 class="heading-tertiary">New to cineScope!</h3>
+        <p class="new-txt">Create New Account</p>
+        <form class="new-login">
+          <input type="hidden" name="form-name" value="sign-up" />
+          <div>
+            <p class="login-txt">Your Name</p>
+            <input id="full-name" type="text" name="full-name" required />
+          </div>
+          <div>
+            <p class="login-txt">Email</p>
+            <input id="email" type="email" name="email" required />
+          </div>
+          <div>
+            <p class="login-txt">Password</p>
+            <input id="password" type="password" name="password" required />
+          </div>
+          <div></div>
+        </form>
+        <button class="create-btn">Create</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-sign-in">
+      <div class="footer-sign-in-text">
+        <a href="signin.html" class="footer-sign-in-link"
+          >Sign in for more access</a
+        >
+      </div>
+      <div class="footer-get-connect">
+        <div class="social-links">
+          <p class="social-links-heading">Follow cineScope on social</p>
+          <div class="links">
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-tiktok" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-youtube" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-instagram" class="social-icon"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-app">
+          <div class="app-qr">
+            <div class="footer-app-text">
+              <p class="app-qr-heading">Get the cineScope app</p>
+              <p class="app-available">For Android and IOS</p>
+            </div>
+            <div class="qr">
+              <img class="qr-img" alt="qr image" src="images\qr.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quick-links">
+        <a href="#" class="quick-links-link">Help</a>
+        <a href="#" class="quick-links-link">About</a>
+        <a href="jobs.html" class="quick-links-link">Jobs</a>
+        <a href="#" class="quick-links-link">Privacy Policy</a>
+        <a href="#" class="quick-links-link">Contact</a>
+      </div>
+      <div class="copyright">&copy; 1990-2025 by cineScope.inc</div>
+    </div>
+  </footer>
+</body>

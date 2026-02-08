@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/logo-1.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\jobs-style.css" />
+    <link rel="stylesheet" href="css\queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Jobs</title>
+  </head>
+  <body></body>
+</html>
+
+<body>
+  <header class="section-header">
+    <div class="header-part">
+      <a href="#">
+        <img class="logo-img" alt="cineScope logo" src="images\logo.png" />
+        <img class="logo-img-1" alt="cineScope logo" src="images\logo-1.png" />
+      </a>
+      <div class="header-navigation">
+        <div class="search-bar">
+          <input
+            type="search"
+            id="movie search"
+            name="q"
+            class="search-box"
+            placeholder="Search"
+          />
+          <button class="search-butt">Search</button>
+        </div>
+        <ul class="main-nav">
+          <li><a class="home-nav main-nav-link" href="index.html">Home</a></li>
+          <li class="categories">
+            <a class="categories-nav main-nav-link" href="#"
+              >Categories <ion-icon name="chevron-down-outline"></ion-icon
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Superhero</a></li>
+              <li><a href="#">Comedy</a></li>
+              <li><a href="#">Horror</a></li>
+              <li><a href="#">Scify</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="signin-nav main-nav-link" href="signin.html">Sign in</a>
+          </li>
+        </ul>
+      </div>
+      <button class="mobile-navigation">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="categories"
+              >Categories <ion-icon name="chevron-down-outline"></ion-icon
+            ></a>
+          </li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Job Application Form</h1>
+
+    <form action="/submit_exam_form" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br />
+        <input type="text" id="fullname" name="fullname" required /><br /><br />
+
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <label for="genger">Gender:</label><br />
+
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br />
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone Number:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          anem="phone"
+          pattern="[0-9]{10}"
+          placeholder="Enter 10-digit number"
+          required
+        /><br />
+        <br />
+
+        <label for="address">Address:</label><br />
+        <textarea
+          id="address"
+          name="address"
+          rows="4"
+          cols="40"
+          required
+        ></textarea
+        ><br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Job Details</legend>
+
+        <label for="position">Position Applying For:</label><br />
+        <select id="positoin" name="position" required>
+          <option value="">--Select Position--</option>
+          <option value="software-engineer">Software Engineer</option>
+          <option value="data-analyst">Data Analyst</option>
+          <option value="web_developer">Web Developer</option>
+          <option value="project_manager">Project Manager</option></select
+        ><br /><br />
+
+        <label>Preferred Job Type:</label><br />
+        <input
+          type="radio"
+          id="fulltime"
+          name="job_type"
+          value="Full-Time"
+          required
+        />
+        <label for="fulltime">Full-Time</label><br />
+
+        <input type="radio" id="parttime" name="job_type" value="Part-Time" />
+        <label for="parttime">Part-Time</label><br />
+
+        <input
+          type="radio"
+          id="internship"
+          name="job_type"
+          value="Internship"
+        />
+        <label for="internship">Internship</label><br /><br />
+
+        <label>Skills:</label><br />
+        <input type="checkbox" id="html" name="skills" value="HTML" />
+        <label for="html">HTML</label><br />
+
+        <input type="checkbox" id="css" name="skills" value="CSS" />
+        <label for="css">CSS</label><br />
+
+        <input
+          type="checkbox"
+          id="javascript"
+          name="skills"
+          calue="JavaScript"
+        />
+        <label for="javascript">JavaScript</label><br />
+
+        <input type="checkbox" id="python" name="skills" value="Python" />
+        <label for="python">Python</label><br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="experience">Years of Experience:</label><br />
+        <input
+          type="number"
+          id="experience"
+          name="experience"
+          min="0"
+          max="50"
+          required
+        /><br /><br />
+
+        <label for="resume">Upload Resume (PDF only):</label><br />
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf"
+          required
+        /><br /><br />
+
+        <label for="message">Why should we hire you?</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          cols="40"
+          placeholder="Write a short statement..."
+          required
+        ></textarea
+        ><br /><br />
+
+        <input type="checkbox" id="agree" name="agree" required />
+        <label for="agree"
+          >I agree that all information provided is correct.</label
+        ><br /><br />
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-sign-in">
+      <div class="footer-sign-in-text">
+        <a href="signin.html" class="footer-sign-in-link"
+          >Sign in for more access</a
+        >
+      </div>
+      <div class="footer-get-connect">
+        <div class="social-links">
+          <p class="social-links-heading">Follow cineScope on social</p>
+          <div class="links">
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-tiktok" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-youtube" class="social-icon"></ion-icon
+              ></a>
+            </div>
+            <div class="link1">
+              <a href="#" class="link1-link"
+                ><ion-icon name="logo-instagram" class="social-icon"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-app">
+          <div class="app-qr">
+            <div class="footer-app-text">
+              <p class="app-qr-heading">Get the cineScope app</p>
+              <p class="app-available">For Android and IOS</p>
+            </div>
+            <div class="qr">
+              <img class="qr-img" alt="qr image" src="images\qr.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quick-links">
+        <a href="#" class="quick-links-link">Help</a>
+        <a href="#" class="quick-links-link">About</a>
+        <a href="jobs.html" class="quick-links-link">Jobs</a>
+        <a href="#" class="quick-links-link">Privacy Policy</a>
+        <a href="#" class="quick-links-link">Contact</a>
+      </div>
+      <div class="copyright">&copy; 1990-2025 by cineScope.inc</div>
+    </div>
+  </footer>
+</body>

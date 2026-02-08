@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/logo-1.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>cineScope &mdash; Movies Together!</title>
+  </head>
+
+  <body>
+    <header class="section-header">
+      <div class="header-part">
+        <a href="#">
+          <img class="logo-img" alt="cineScope logo" src="images\logo.png" />
+          <img
+            class="logo-img-1"
+            alt="cineScope logo"
+            src="images\logo-1.png"
+          />
+        </a>
+        <div class="header-navigation">
+          <div class="search-bar">
+            <input
+              type="search"
+              id="movie search"
+              name="q"
+              class="search-box"
+              placeholder="Search"
+            />
+            <button class="search-butt">Search</button>
+          </div>
+          <ul class="main-nav">
+            <li>
+              <a class="home-nav main-nav-link" href="index.html">Home</a>
+            </li>
+            <li class="categories">
+              <a class="categories-nav main-nav-link" href="#"
+                >Categories <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Superhero</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Scify</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="signin-nav main-nav-link" href="signin.html">Sign in</a>
+            </li>
+          </ul>
+        </div>
+        <button class="mobile-navigation">
+          <ion-icon name="menu-outline"></ion-icon>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="categories"
+                >Categories <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+            </li>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="featured-trailers">
+        <section class="section-featured">
+          <div class="featured-part">
+            <a href="#" class="featured-link">
+              <img
+                class="featured-movie"
+                alt="featured movie image"
+                src="images\movies\minecraft.webp"
+              />
+              <div class="featured-descriptions-play">
+                <div class="featured-movie-desc movie-desc">
+                  <p class="movie-title">
+                    <a href="#" class="featured-movie-link">Minecraft</a>
+                  </p>
+                  <p class="movie-duration">2h 28m</p>
+                  <p class="movie-rating">
+                    <ion-icon name="star"></ion-icon> 7.9
+                  </p>
+                </div>
+                <div class="movie-play">
+                  <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="section-trailer">
+          <h2 class="heading-secondary">
+            <a href="#" class="secondary-heading-link"
+              >Trailers <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </h2>
+          <div class="trailers">
+            <div class="trailer">
+              <img
+                class="trailer-img"
+                alt="trailer 1 image"
+                src="images\trailers\28yearsLater.webp"
+              />
+              <div class="trailer-desc">
+                <a href="#" class="trailer-name">28 Years Later</a>
+                <p class="trailer-duration">4:22</p>
+                <p class="trailer-review">
+                  <ion-icon name="thumbs-up"></ion-icon> 348
+                </p>
+              </div>
+            </div>
+
+            <div class="trailer">
+              <img
+                class="trailer-img"
+                alt="trailer 2 image"
+                src="images\trailers\alienEarth.webp"
+              />
+              <div class="trailer-desc">
+                <a href="#" class="trailer-name">Alien Earth</a>
+                <p class="trailer-duration">5:07</p>
+                <p class="trailer-review">
+                  <ion-icon name="thumbs-up"></ion-icon> 289
+                </p>
+              </div>
+            </div>
+
+            <div class="trailer">
+              <img
+                class="trailer-img"
+                alt="trailer 3 image"
+                src="images\trailers\eyesOfWakanda.webp"
+              />
+              <div class="trailer-desc">
+                <a href="#" class="trailer-name">Eyes Of Wakanda</a>
+                <p class="trailer-duration">3:55</p>
+                <p class="trailer-review">
+                  <ion-icon name="thumbs-up"></ion-icon> 551
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section-latest-release">
+        <h1 class="heading-primary">
+          <a href="#" class="primary-link"
+            >Latest Release <ion-icon name="chevron-forward-outline"></ion-icon
+          ></a>
+        </h1>
+
+        <div class="latest-release-container">
+          <button class="scroll-btn scroll-left">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+
+          <div class="latest-releases">
+            <div class="latest-release latest-release-1">
+              <img
+                class="latest-release-img"
+                alt="latest release movie image"
+                src="images\movies\savingPrivateRyan.webp"
+              />
+              <div class="latest-release-desc">
+                <a href="#" class="latest-release-title">Saving Private Ryan</a>
+                <p class="latest-release-duration">2h 40m</p>
+                <p class="latest-release-review">
+                  <ion-icon name="star"></ion-icon> 8.8
+                </p>
+              </div>
+            </div>
+
+            <div class="latest-release latest-release-2">
+              <img
+                class="latest-release-img"
+                alt="latest release movie image"
+                src="images\movies\theMeg.webp"
+              />
+              <div class="latest-release-desc">
+                <a href="#" class="latest-release-title">The Meg</a>
+                <p class="latest-release-duration">1h 58m</p>
+                <p class="latest-release-review">
+                  <ion-icon name="star"></ion-icon> 7.2
+                </p>
+              </div>
+            </div>
+
+            <div class="latest-release latest-release-3">
+              <img
+                class="latest-release-img"
+                alt="latest release movie image"
+                src="images\movies\incendies.webp"
+              />
+              <div class="latest-release-desc">
+                <a href="#" class="latest-release-title">Incendies</a>
+                <p class="latest-release-duration">2h 40m</p>
+                <p class="latest-release-review">
+                  <ion-icon name="star"></ion-icon> 8.3
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="scroll-btn scroll-right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="more-latest-release">
+          <a href="#" class="more-latest-release-link more-link"
+            >More recommendations</a
+          >
+        </div>
+      </section>
+
+      <section class="section-actors">
+        <h1 class="heading-primary">
+          <a href="#" class="primary-link"
+            >Most Popular Celebrities
+            <ion-icon name="chevron-forward-outline"></ion-icon
+          ></a>
+        </h1>
+        <div class="latest-release-container">
+          <button class="scroll-btn scroll-left-actors">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <div class="popular-actors">
+            <div class="popular-celebrity popular-celebrity-1">
+              <img
+                class="populary-celebrity-img"
+                alt="popular celebrity image"
+                src="images\actors\noahWyle.webp"
+              />
+              <div class="celebrity-desc">
+                <a href="#" class="celebrity-name">Noah Wyle</a>
+                <p class="actor-dob">4 June 1971</p>
+              </div>
+            </div>
+
+            <div class="popular-celebrity popular-celebrity-2">
+              <img
+                class="populary-celebrity-img"
+                alt="popular celebrity image"
+                src="images\actors\sarahCatherineHook.webp"
+              />
+              <div class="celebrity-desc">
+                <a href="#" class="celebrity-name">Sarah Catherine Hook</a>
+                <p class="actor-dob">21 April 1995</p>
+              </div>
+            </div>
+
+            <div class="popular-celebrity popular-celebrity-3">
+              <img
+                class="populary-celebrity-img"
+                alt="popular celebrity image"
+                src="images\actors\tomHardy.webp"
+              />
+              <div class="celebrity-desc">
+                <a href="#" class="celebrity-name">Tom Hardy</a>
+                <p class="actor-dob">15 September 1977</p>
+              </div>
+            </div>
+
+            <div class="popular-celebrity popular-celebrity-4">
+              <img
+                class="populary-celebrity-img"
+                alt="popular celebrity image"
+                src="images\actors\sofiaCarson.webp"
+              />
+              <div class="celebrity-desc">
+                <a href="#" class="celebrity-name">Sofia Carson</a>
+                <p class="actor-dob">10 April 1993</p>
+              </div>
+            </div>
+
+            <div class="popular-celebrity popular-celebrity-5">
+              <img
+                class="populary-celebrity-img"
+                alt="popular celebrity image"
+                src="images\actors\tomMarin.webp"
+              />
+              <div class="celebrity-desc">
+                <a href="#" class="celebrity-name">Tom Marin</a>
+                <p class="actor-dob">25 August 1994</p>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-btn scroll-right-actors">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-top-of-week">
+        <h1 class="heading-primary">
+          <a href="#" class="primary-link"
+            >Top of Week <ion-icon name="chevron-forward-outline"></ion-icon
+          ></a>
+        </h1>
+
+        <div class="latest-release-container">
+          <button class="scroll-btn scroll-left">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <div class="top-of-week">
+            <div class="tow-movie tow-movie-1">
+              <img
+                class="tow-movie-img"
+                alt="top of week movie image"
+                src="images\movies\cleopatra.webp"
+              />
+              <div class="tow-movie-desc">
+                <a href="#" class="tow-movie-name">Cleopatra</a>
+                <p class="tow-movie-duration">2h 15m</p>
+                <p class="tow-review">
+                  <ion-icon name="star" class="review-icon"></ion-icon> 8.8
+                </p>
+                <p class="tow-trailer">
+                  <a href="#" class="tow-trailer-link"
+                    ><ion-icon name="play" icon="play-icon"></ion-icon>
+                    Trailer</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="tow-movie tow-movie-2">
+              <img
+                class="tow-movie-img"
+                alt="top of week movie image"
+                src="images\movies\conjuring.webp"
+              />
+              <div class="tow-movie-desc">
+                <a href="#" class="tow-movie-name">Conjuring</a>
+                <p class="tow-movie-duration">2h 48m</p>
+                <p class="tow-review"><ion-icon name="star"></ion-icon> 7.8</p>
+                <p class="tow-trailer">
+                  <a href="#" class="tow-trailer-link"
+                    ><ion-icon name="play"></ion-icon> Trailer</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="tow-movie tow-movie-3">
+              <img
+                class="tow-movie-img"
+                alt="top of week movie image"
+                src="images\movies\downfall.webp"
+              />
+              <div class="tow-movie-desc">
+                <a href="#" class="tow-movie-name">Downfall</a>
+                <p class="tow-movie-duration">2h 9m</p>
+                <p class="tow-review"><ion-icon name="star"></ion-icon> 8.9</p>
+                <p class="tow-trailer">
+                  <a href="#" class="tow-trailer-link"
+                    ><ion-icon name="play"></ion-icon> Trailer</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="tow-movie tow-movie-4">
+              <img
+                class="tow-movie-img"
+                alt="top of week movie image"
+                src="images\movies\dunkirk.webp"
+              />
+              <div class="tow-movie-desc">
+                <a href="#" class="tow-movie-name">Dunkirk</a>
+                <p class="tow-movie-duration">3h 5m</p>
+                <p class="tow-review"><ion-icon name="star"></ion-icon> 8.3</p>
+                <p class="tow-trailer">
+                  <a href="#" class="tow-trailer-link"
+                    ><ion-icon name="play"></ion-icon> Trailer</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-btn scroll-right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-popular-interests">
+        <h1 class="heading-primary">
+          <a href="#" class="primary-link"
+            >Popular Interests
+            <ion-icon name="chevron-forward-outline"></ion-icon
+          ></a>
+        </h1>
+        <div class="popular-interests">
+          <div class="interest">
+            <img
+              class="interest-img"
+              alt="popular interest image"
+              src="images\categories\superhero.webp"
+            />
+            <p class="category-name">
+              <a href="#" class="category-link">Superhero</a>
+            </p>
+          </div>
+          <div class="interest">
+            <img
+              class="interest-img"
+              alt="popular interest image"
+              src="images\categories\comedy.webp"
+            />
+            <p class="category-name">
+              <a href="#" class="category-link">Comedy</a>
+            </p>
+          </div>
+          <div class="interest">
+            <img
+              class="interest-img"
+              alt="popular interest image"
+              src="images\categories\horror.webp"
+            />
+            <p class="category-name">
+              <a href="#" class="category-link">Horror</a>
+            </p>
+          </div>
+          <div class="interest">
+            <img
+              class="interest-img"
+              alt="popular interest image"
+              src="images\categories\scify.webp"
+            />
+            <p class="category-name">
+              <a href="#" class="category-link">Scify</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-comming-soon">
+        <h1 class="heading-primary">
+          <a href="#" class="primary-link"
+            >Comming soon to theaters
+            <ion-icon name="chevron-forward-outline"></ion-icon
+          ></a>
+        </h1>
+
+        <div class="latest-release-container">
+          <button class="scroll-btn scroll-left">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <div class="comming-soon-movies">
+            <div class="soon-movie soon-movie-1">
+              <img
+                class="soon-movie-img"
+                alt="comming soon movie image"
+                src="images\movies\schindlers.webp"
+              />
+              <div class="comming-movie-desc">
+                <p class="release-date">12th June, 2025</p>
+                <p class="comming-movie-name">
+                  <a href="#" class="comming-movie-link">Schindler's List</a>
+                </p>
+                <p class="comming-movie-trailer">
+                  <a href="#" class="comming-movie-trailer-link"
+                    ><ion-icon name="play"></ion-icon> Trailer</a
+                  >
+                </p>
+                <p class="get-tickets">
+                  <a href="#" class="tickets-link">Get Tickets</a>
+                </p>
+              </div>
+            </div>
+            <div class="soon-movie soon-movie-2">
+              <img
+                class="soon-movie-img"
+                alt="comming soon movie image"
+                src="images\movies\peakyBlinders.webp"
+              />
+              <div class="comming-movie-desc">
+                <p class="release-date">29th July, 2025</p>
+                <p class="comming-movie-name">
+                  <a href="#" class="comming-movie-link">Peaky Blinders</a>
+                </p>
+                <p class="comming-movie-trailer">
+                  <a href="#" class="comming-movie-trailer-link"
+                    ><ion-icon name="play"></ion-icon> Trailer</a
+                  >
+                </p>
+                <p class="get-tickets">
+                  <a href="#" class="tickets-link">Get Tickets</a>
+                </p>
+              </div>
+            </div>
+            <div class="soon-movie soon-movie-3">
+              <img
+                class="soon-movie-img"
+                alt="comming soon movie image"
+                src="images\movies\interstellar.webp"
+              />
+              <div class="comming-movie-desc">
+                <p class="release-date">28th June, 2025</p>
+                <p class="comming-movie-name">
+                  <a href="#" class="comming-movie-link">Interstellar</a>
+                </p>
+                <p class="comming-movie-trailer">
+                  <a href="#" class="comming-movie-trailer-link"
+                    ><ion-icon name="play"></ion-icon> Trailer</a
+                  >
+                </p>
+                <p class="get-tickets">
+                  <a href="#" class="tickets-link">Get Tickets</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-btn scroll-right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-sign-in">
+        <div class="footer-sign-in-text">
+          <a href="signin.html" class="footer-sign-in-link"
+            >Sign in for more access</a
+          >
+        </div>
+        <div class="footer-get-connect">
+          <div class="social-links">
+            <p class="social-links-heading">Follow cineScope on social</p>
+            <div class="links">
+              <div class="link1">
+                <a href="#" class="link1-link"
+                  ><ion-icon name="logo-tiktok" class="social-icon"></ion-icon
+                ></a>
+              </div>
+              <div class="link1">
+                <a href="#" class="link1-link"
+                  ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+                ></a>
+              </div>
+              <div class="link1">
+                <a href="#" class="link1-link"
+                  ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+                ></a>
+              </div>
+              <div class="link1">
+                <a href="#" class="link1-link"
+                  ><ion-icon name="logo-youtube" class="social-icon"></ion-icon
+                ></a>
+              </div>
+              <div class="link1">
+                <a href="#" class="link1-link"
+                  ><ion-icon
+                    name="logo-instagram"
+                    class="social-icon"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-app">
+            <div class="app-qr">
+              <div class="footer-app-text">
+                <p class="app-qr-heading">Get the cineScope app</p>
+                <p class="app-available">For Android and IOS</p>
+              </div>
+              <div class="qr">
+                <img class="qr-img" alt="qr image" src="images\qr.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-links">
+          <a href="#" class="quick-links-link">Help</a>
+          <a href="#" class="quick-links-link">About</a>
+          <a href="jobs.html" class="quick-links-link">Jobs</a>
+          <a href="#" class="quick-links-link">Privacy Policy</a>
+          <a href="#" class="quick-links-link">Contact</a>
+        </div>
+        <div class="copyright">&copy; 1990-2025 by cineScope.inc</div>
+      </div>
+    </footer>
+  </body>
+</html>

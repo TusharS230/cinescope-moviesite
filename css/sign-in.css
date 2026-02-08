@@ -1,0 +1,152 @@
+/* ************************* */
+/*          SIGN IN          */
+/* ************************* */
+
+.sign-in-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 0;
+  justify-items: center;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.old-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem; /* Padding to keep it off the line */
+  z-index: 2; /* Make sure the content stays above the line */
+}
+
+.new-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 39.19rem;
+  padding: 0rem 2rem; /* Padding to keep it off the line */
+  z-index: 2;
+}
+
+.sign-in-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background-color: #444;
+  z-index: 1;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.sign-in-options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.sign-in {
+  background-color: rgb(3, 3, 26);
+  transition: all 0.3s ease;
+}
+
+.sign-in:hover {
+  background-color: rgb(1, 1, 7);
+}
+
+.sign-in:hover .sign-in-company {
+  color: rgb(255, 217, 46);
+}
+
+.sign-in:hover .sign-logo {
+  opacity: 0.7;
+}
+
+.sign-in-options {
+  padding: 1rem 1rem;
+  background-color: rgb(9, 9, 50);
+  gap: 1rem;
+}
+
+.sign-in-company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  gap: 2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.sign-in-company img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.sign-in-company ion-icon {
+  font-size: 3rem;
+}
+
+.conditions-txt p {
+  overflow: hidden;
+  padding: 0 0rem;
+}
+
+.conditions-txt a {
+  color: rgb(208, 208, 237);
+  transition: all 0.3s;
+}
+
+.conditions-txt a:hover {
+  color: rgb(169, 169, 233);
+}
+
+.new-txt {
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+}
+
+.login-txt {
+  font-size: 1.5rem;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.new-user input {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 1rem;
+}
+
+.new-user input:focus {
+  outline: none;
+  border: 1px solid rgb(255, 217, 46);
+  padding-left: 1rem;
+}
+
+.create-btn {
+  margin: 2rem 0;
+  padding: 0.6rem 1.8rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 545;
+  background-color: rgb(97, 160, 184);
+  transition: all 0.3s;
+}
+
+.create-btn:hover {
+  background-color: rgb(255, 217, 46);
+  cursor: pointer;
+}
+
+.create-btn:active {
+  background-color: rgb(210, 177, 31);
+}

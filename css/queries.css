@@ -1,0 +1,628 @@
+/* rem and em do NOT depend on html font-size in media queries! 
+Instead, 1 rem = 1 em = 16px*/
+
+/* ******************************* */
+/* BELOW 1520px (smaller desktops) */
+/* ******************************* */
+
+@media (max-width: 95em) {
+  .featured-trailers {
+    display: grid;
+  }
+
+  .featured-part {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .trailers {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding-bottom: 4em;
+  }
+
+  .trailer {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trailer-img {
+    height: 20em;
+    width: 35em;
+  }
+
+  .more-trailer {
+    display: flex;
+    justify-content: right;
+    padding-right: 15em;
+  }
+
+  .popular-celebrity-5 {
+    display: none;
+  }
+
+  .scroll-left-actors {
+    left: 4em;
+  }
+
+  .scroll-right-actors {
+    right: 4em;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 1430px          */
+/* ******************************* */
+
+@media (max-width: 89.375em) {
+  .scroll-left-actors {
+    left: 5em;
+  }
+
+  .scroll-right-actors {
+    right: 5em;
+  }
+
+  .tow-movie-4 {
+    display: none;
+  }
+
+  .tow-movie-img {
+    height: 60em;
+    width: 40em;
+  }
+
+  .scroll-left {
+    left: 0em;
+  }
+
+  .scroll-right {
+    right: 0em;
+  }
+
+  .scroll-left-actors {
+    left: 2em;
+  }
+
+  .scroll-right-actors {
+    right: 2em;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 1392px          */
+/* ******************************* */
+
+@media (max-width: 87em) {
+  .logo-img {
+    display: none;
+  }
+
+  .logo-img-1 {
+    display: block;
+  }
+
+  .header-navigation {
+    padding-left: 5rem;
+  }
+
+  .latest-release-img,
+  .tow-movie-img,
+  .soon-movie-img {
+    height: 52.5em;
+    width: 35em;
+  }
+
+  .scroll-left {
+    left: 0em;
+  }
+
+  .scroll-right {
+    right: 0em;
+  }
+
+  .scroll-left-actors {
+    left: 0.5em;
+  }
+
+  .scroll-right-actors {
+    right: 0.5em;
+  }
+
+  .more-trailer {
+    padding-right: 10em;
+  }
+
+  .popular-interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-get-connect {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-links {
+    padding: 3em 0;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 1248px          */
+/* ******************************* */
+
+@media (max-width: 78em) {
+  .scroll-left-actors {
+    left: 0em;
+  }
+
+  .scroll-right-actors {
+    right: 0em;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 1232px          */
+/* ******************************* */
+
+@media (max-width: 77em) {
+  .featured-part {
+    width: 80rem;
+  }
+
+  .trailers {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .trailer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .trailer-desc {
+    margin-left: 3rem;
+  }
+
+  .trailer-img {
+    width: 45em;
+    height: 25em;
+  }
+
+  .latest-release-3,
+  .tow-movie-3,
+  .soon-movie-3,
+  .popular-celebrity-4,
+  .main-nav-link {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+    margin-left: -80%;
+  }
+
+  .search-bar {
+    justify-self: center;
+  }
+
+  .scroll-left {
+    left: 5em;
+  }
+
+  .scroll-right {
+    right: 5em;
+  }
+
+  .scroll-left-actors {
+    left: 4em;
+  }
+
+  .scroll-right-actors {
+    right: 4em;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 1136px          */
+/* ******************************* */
+
+@media (max-width: 71em) {
+  .scroll-left {
+    left: 3em;
+  }
+
+  .scroll-right {
+    right: 3em;
+  }
+
+  .scroll-left-actors {
+    left: 2em;
+  }
+
+  .scroll-right-actors {
+    right: 2em;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 1040px          */
+/* ******************************* */
+
+@media (max-width: 65em) {
+  .scroll-left {
+    left: 1.5em;
+  }
+
+  .scroll-right {
+    right: 1.5em;
+  }
+
+  .scroll-left-actors {
+    left: 0em;
+  }
+
+  .scroll-right-actors {
+    right: 0em;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 960px           */
+/* ******************************* */
+
+@media (max-width: 60em) {
+  .popular-celebrity-3 {
+    display: none;
+  }
+
+  .scroll-left {
+    left: 0em;
+  }
+
+  .scroll-right {
+    right: 0em;
+  }
+
+  .scroll-left-actors {
+    left: 4em;
+  }
+
+  .scroll-right-actors {
+    right: 4em;
+  }
+
+  .more-latest-release {
+    padding-left: 70%;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 896px           */
+/* ******************************* */
+
+@media (max-width: 56em) {
+  .search-bar .search-box {
+    width: 35rem;
+  }
+
+  .featured-trailer {
+    width: 100vh;
+  }
+
+  .featured-part {
+    display: flex;
+  }
+
+  .featured-movie {
+    height: 30em;
+    width: 45em;
+  }
+
+  .featured-movie-desc {
+    font-size: 2em;
+  }
+
+  .section-trailer {
+    width: 100%;
+  }
+
+  .trailers {
+    width: 100vh;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .trailer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trailer-desc {
+    padding-top: 2em;
+  }
+
+  .more-trailer {
+    width: 100vh;
+    margin: 4rem auto;
+    display: block;
+    justify-items: center;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .latest-release-2,
+  .tow-movie-2,
+  .soon-movie-2 {
+    display: none;
+  }
+
+  .scroll-left-actors {
+    left: 0em;
+  }
+
+  .scroll-right-actors {
+    right: 0em;
+  }
+
+  .sign-in-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 10rem;
+    padding: 0;
+  }
+
+  .sign-in-container::before {
+    display: none;
+  }
+
+  .old-user,
+  .new-user {
+    padding: 0;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 736px           */
+/* ******************************* */
+
+@media (max-width: 46em) {
+  .search-bar {
+    display: none;
+  }
+
+  .logo-img-1 {
+    height: 8em;
+    width: 8em;
+  }
+
+  .featured-movie {
+    height: 30em;
+    width: 45em;
+  }
+
+  .featured-movie-desc {
+    font-size: 2rem;
+  }
+
+  .secondary-heading-link {
+    font-size: 2.5rem;
+  }
+
+  .featured-trailer {
+    width: 100%;
+  }
+
+  .section-trailer {
+    width: 100%;
+  }
+
+  .trailers {
+    width: 100%;
+  }
+
+  .trailer-name {
+    font-size: 2rem;
+  }
+
+  .more-trailer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .more-latest-release {
+    margin: 4rem auto;
+    display: block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .heading-primary {
+    font-size: 2.8rem;
+  }
+
+  .popular-interests {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-sign-in-link {
+    font-size: 1.5rem;
+  }
+
+  .social-links-heading,
+  .app-qr-heading {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .qr-img {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .quick-links-link {
+    font-size: 1.5rem;
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 656px           */
+/* ******************************* */
+
+@media (max-width: 41em) {
+  .logo-img-1 {
+    height: 5em;
+    width: 5em;
+  }
+
+  .featured-movie {
+    height: 25em;
+    width: 38em;
+  }
+
+  .featured-movie-desc {
+    font-size: 1.5rem;
+  }
+
+  .trailer-img {
+    height: 20rem;
+    width: 35rem;
+  }
+
+  .trailer-name {
+    font-size: 2rem !important;
+  }
+
+  .latest-release-img,
+  .tow-movie-img,
+  .soon-movie-img {
+    height: 40rem;
+    width: 28rem;
+  }
+
+  .popular-celebrity-2 {
+    display: none;
+  }
+
+  .popular-celebrity-img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .interest-img {
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .social-links-heading {
+    letter-spacing: normal;
+  }
+
+  .app-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+
+  .qr {
+    margin-top: 2rem;
+  }
+
+  .app-available {
+    align-self: center;
+  }
+
+  .social-links-heading,
+  .app-qr-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .app-available {
+    font-size: 1.2rem;
+  }
+
+  .quick-links-link {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .latest-release-title,
+  .tow-movie-name,
+  .comming-movie-link {
+    font-size: 2rem;
+  }
+
+  .release-date,
+  .comming-movie-trailer-link,
+  .tickets-link,
+  .latest-release-duration,
+  .latest-release-review {
+    font-size: 1.5rem;
+  }
+}
+
+/* ******************************* */
+/*           BELOW 480px           */
+/* ******************************* */
+
+@media (max-width: 30em) {
+  .featured-movie {
+    height: 20rem;
+    width: 30rem;
+  }
+
+  .trailer-img {
+    height: 16rem;
+    width: 25rem;
+  }
+
+  .latest-release-img,
+  .tow-movie-img,
+  .soon-movie-img {
+    height: 40rem;
+    width: 25rem;
+  }
+
+  .primary-link {
+    font-size: 2.2rem;
+  }
+
+  .populary-celebrity-img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .interest-img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .footer-get-connect {
+    padding: 2rem 4rem;
+  }
+
+  .quick-links {
+    margin: 0 1rem;
+    gap: 2rem;
+  }
+}

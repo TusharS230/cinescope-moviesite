@@ -1,0 +1,12 @@
+Project Name: cineScope
+Description: Movie review site.
+
+Movies: 11
+	featured: 01
+	latest: 03
+	top: 04
+	soon: 03
+
+Actors: 05
+
+Trailers: 03
